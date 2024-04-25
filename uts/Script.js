@@ -30,10 +30,10 @@ btnSimpan.addEventListener("click", function() {
     }
     localStorage.setItem("ericcandra_2226240059", JSON.stringify(data));
     // panggil get data
-    clearForm();
+    getData();
 });
 
-function clearForm(){
+function getData(){
     // clear element list
     list.innerHTML ="komunitas web developer";
 
@@ -43,7 +43,14 @@ function clearForm(){
             list.innerHTML += `<tr><td>${row.nama}<td><td> ${row.Email}</td></tr> 
             ${row.noHp}</td></tr> ${row.Gambar}</td></tr> ${row.Usia}</td></tr>`;
         }
-    }
+    } 
 }   
 
+function clearForm(){
+    inputnama.innerHTML= "nama";
+    inputEmail.innerHTML="Email";
+    inputnoHp.innerHTML="noHp";
+    inputUrlfoto.innerHTML= "Urlfoto";
+    inputUsia.innerHTML="Usia";
+}
 
