@@ -13,47 +13,63 @@
 </head>
 <body>
     <div class="container">
+        <h1 class="text-center mt-5 mb-3">Komunitas Web Developer<br />Palembang</h1>
         <div class="row">
-            <div class="col-lg-4">
-                <h2>Formulir</h2>
-                <div class="mb-3">
-                    <label for="" class="form-label">Nama</label>
-                    <input type="text" class="form-control" id="nama" />
+          
+          <div class="col-lg-9">
+            <div class="row">
+              <div class="col-lg-4 col-sm-12 p-2">
+                <div class="bg-primary rounded p-2">
+                  <h4>Anggota</h4>
+                  <p id="totalanggota"></p>
                 </div>
-                <div class="mb-3">
-                    <label for="text" class="form-label">Email</label>
-                    <input type="text" class="form-control" id="Email" />
+              </div>
+              <div class="col-lg-4 col-sm-6 p-2">
+                <div class="bg-warning rounded p-2">
+                  <h4>Usia Termuda</h4>
+                  <p id="usiamuda"></p>
                 </div>
-                <div class="mb-3">
-                    <label for="text" class="form-label">noHp</label>
-                    <input type="text" class="form-control" id="noHp" />
+              </div>
+              <div class="col-lg-4 col-sm-6 p-2">
+                <div class="bg-success rounded p-2 text-white">
+                  <h4>Usia Tua</h4>
+                  <p id="usiatua"></p>
                 </div>
-                <div class="mb-3">
-                    <label for="text" class="form-label">Urlfoto</label>
-                    <input type="text" class="form-control" id="Urlfoto" />
-                </div>
-                <div class="mb-3">
-                    <label for="text" class="form-label">Usia</label>
-                    <input type="text" class="form-control" id="Usia" />
-                </div>
-                <button class="btn btn-primary" id="btnSimpan">Simpan</button>
+              </div>
             </div>
-            <div class="col-lg-6">
-                <h2>komunitas web developer</h2>
-                <ul id="list"></ul>
-                <table class="table">
-                    <thead>
-                        <th>Nama</th>
-                        <th>Email</th>
-                        <th>noHp</th>
-                        <th>Gambar</th>
-                        <th>Usia</th>
-                    </thead>
-                    <tbody id="table"></tbody>
-                </table>
+            <h2>Anggota</h2>
+            <div class="row" id="list"></div>
+          </div>
+          <div class="col-lg-3">
+            <h2>Formulir</h2>
+            <div class="mb-2">
+              <label for="" class="form-label">Nama</label>
+              <input type="text" class="form-control" id="nama" />
             </div>
+            <div class="mb-2">
+              <label for="" class="form-label">Email</label>
+              <input type="text" class="form-control" id="email" />
+            </div>
+            <div class="mb-2">
+              <label for="" class="form-label">Hp</label>
+              <input type="text" class="form-control" id="hp" />
+            </div>
+            <div class="mb-2">
+              <label for="" class="form-label">Usia</label>
+              <input type="number" class="form-control" id="usia" />
+            </div>
+            <div class="mb-2">
+              <label for="" class="form-label">Url Foto</label>
+              <input type="text" class="form-control" id="url_foto" placeholder="https://..." />
+            </div>
+            <button class="btn btn-primary" id="btnSimpan">Simpan</button>
+          </div>
         </div>
-    </div>
+        <div class="row">
+          <div class="col text-center">&copy; 2024 Nama</div>
+        </div>
+      </div>
+  
     <Script src="Script.js"></Script>
 </body>
 </html>
